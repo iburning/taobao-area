@@ -1,0 +1,32 @@
+{
+  "name": "taobao-area",
+  "version": "1.0.0",
+  "description": "taobao area data",
+  "main": "dist/taobao-area.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iburning/taobao-area.git"
+  },
+  "keywords": [
+    "area",
+    "location"
+  ],
+  "author": "burning",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iburning/taobao-area/issues"
+  },
+  "homepage": "https://github.com/iburning/taobao-area#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
