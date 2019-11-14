@@ -19,6 +19,10 @@ export const ver = '2019.11'
 
 export function getList(parentId, type) {
   const list = []
+
+  if (parentId === undefined) {
+    return list
+  }
   
   ids.map(_id => {
     const item = data[_id]
@@ -31,6 +35,10 @@ export function getList(parentId, type) {
 }
 
 export function getOne(id, type) {
+  if (parentId === undefined) {
+    return null
+  }
+
   ids.map(_id => {
     const item = data[_id]
     if (_id === id.toString()) {
@@ -42,6 +50,10 @@ export function getOne(id, type) {
 }
 
 export function getOneByName(name, type) {
+  if (parentId === undefined) {
+    return null
+  }
+
   ids.map(_id => {
     const item = data[_id]
     if (item[0] === name) {
