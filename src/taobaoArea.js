@@ -1,5 +1,5 @@
 //https://division-data.alicdn.com/simple/addr_4_1111_1_0.js
-export default {
+module.exports = {
     152522: ["\u963f\u5df4\u560e\u65d7", "152500", "a ba ga qi", ""],
     513231: ["\u963f\u575d\u53bf", "513200", "a ba xian", ""],
     513200: ["\u963f\u575d\u85cf\u65cf\u7f8c\u65cf\u81ea\u6cbb\u5dde", "510000", "a ba zang zu qiang zu zi zhi zhou", ""],

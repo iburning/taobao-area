@@ -3,14 +3,13 @@ const path = require('path')
 
 module.exports = {
   mode: 'production', //'development',
-  // target: 'node',
+  target: 'node',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'taobao-area.js',
     library: 'taobaoArea',
-    // libraryExport: 'default',
-    // libraryTarget: 'umd'
+    libraryTarget: 'umd'
   },
 
   // externals: {

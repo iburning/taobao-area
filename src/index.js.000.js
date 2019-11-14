@@ -1,4 +1,4 @@
-const data = require('./taobaoArea')
+import data from './taobaoArea'
 
 const ids = Object.keys(data)
 
@@ -15,9 +15,9 @@ function mapData(id, data, type) {
   }
 }
 
-// export const ver = '2019.11'
+export const ver = '2019.11'
 
-function getList(parentId, type) {
+export function getList(parentId, type) {
   const list = []
 
   if (parentId === undefined) {
@@ -34,7 +34,7 @@ function getList(parentId, type) {
   return list
 }
 
-function getOne(id, type) {
+export function getOne(id, type) {
   if (parentId === undefined) {
     return null
   }
@@ -49,7 +49,7 @@ function getOne(id, type) {
   return null
 }
 
-function getOneByName(name, type) {
+export function getOneByName(name, type) {
   if (parentId === undefined) {
     return null
   }
@@ -62,11 +62,4 @@ function getOneByName(name, type) {
   })
 
   return null
-}
-
-module.exports = {
-  ver: '2019.11',
-  getList,
-  getOne,
-  getOneByName
 }
