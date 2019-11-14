@@ -50,7 +50,7 @@ function getOneByName(name, type) {
   return null
 }
 
-export {
+export default {
   getList,
   getOne,
   getOneByName
