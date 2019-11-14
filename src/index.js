@@ -2,7 +2,7 @@ import data from './taobaoArea'
 
 const ids = Object.keys(data)
 
-function mapData(data, type) {
+function mapData(id, data, type) {
   if (type === 1) {
     return {
       id,
@@ -15,43 +15,39 @@ function mapData(data, type) {
   }
 }
 
-function getList(parentId, type) {
+export const ver = '2019.11'
+
+export function getList(parentId, type) {
   const list = []
   
   ids.map(_id => {
     const item = data[_id]
     if (item[1] === parentId.toString()) {
-      list.push(mapData(item, type))
+      list.push(mapData(_id, item, type))
     }
   })
 
   return list
 }
 
-function getOne(id, type) {
+export function getOne(id, type) {
   ids.map(_id => {
     const item = data[_id]
     if (_id === id.toString()) {
-      return mapData(item, type)
+      return mapData(_id, item, type)
     }
   })
 
   return null
 }
 
-function getOneByName(name, type) {
+export function getOneByName(name, type) {
   ids.map(_id => {
     const item = data[_id]
     if (item[0] === name) {
-      return mapData(item, type)
+      return mapData(_id, item, type)
     }
   })
 
   return null
-}
-
-export default {
-  getList,
-  getOne,
-  getOneByName
 }
