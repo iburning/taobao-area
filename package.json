@@ -1,6 +1,6 @@
 {
   "name": "taobao-area",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "taobao area data",
   "main": "dist/taobao-area.js",
   "scripts": {
